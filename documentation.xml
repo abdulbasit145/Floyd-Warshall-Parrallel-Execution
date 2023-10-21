@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assignment</name>
+    </assembly>
+    <members>
+        <member name="T:Assignment.Program">
+            <summary>
+            This program find All Pairs Shortest Paths using Floyd Warshall Algorithm in an n-vertex graph using the following techniques.
+            Data Parallelism (using Parallel.For)
+            Data Parallelism (using Parallel.ForEach)
+            Task Parallelism (using Implicit Task creation)
+            Task Parallelism (using Explicit Task creation)
+            </summary>
+        </member>
+        <member name="M:Assignment.Program.Main(System.String[])">
+            <summary>
+             Main entry point of the program.
+            </summary>
+            <param name="args">Command line arguments</param>
+        </member>
+        <member name="M:Assignment.Program.GenerateRandomGraph(System.Int32[0:,0:])">
+            <summary>
+            Method <c>GenerateRandomGraph</c> create a 2-D graph filled with random Integers.
+            </summary>
+            <param name="graph">It is a 2-D Array representing graph.</param>
+        </member>
+        <member name="M:Assignment.Program.PrintGraph(System.Int32[0:,0:])">
+            <summary>
+            Method <c>PrintGraph</c> print the 2-D graph on console.
+            </summary>
+            <param name="graph">It is a 2-D Array representing graph.</param>
+        </member>
+        <member name="M:Assignment.Program.APSP_UsingSerializedProgram(System.Int32[0:,0:])">
+            <summary>
+            Method <c>APSP_UsingSerializedProgram</c> calculate the all pair shortest path using Flyod Warshall Algorithm
+            </summary>
+            <param name="graph">It is a 2-D Array representing graph.</param>
+        </member>
+        <member name="M:Assignment.Program.APSP_UsingParrallelFor(System.Int32[0:,0:])">
+            <summary>
+            Method <c>APSP_UsingParrallelFor</c> calculate the all pair shortest path using Data Parrallelism (Parrallel.For).
+            </summary>
+            <param name="graph">It is a 2-D Array representing graph.</param>
+        </member>
+        <member name="M:Assignment.Program.APSP_UsingParrallelForEach(System.Int32[0:,0:])">
+            <summary>
+            Method <c>APSP_UsingParrallelForEach</c> calculate the all pair shortest path using Data Parrallelism (Parrallel.ForEach).
+            </summary>
+            <param name="graph">It is a 2-D Array representing graph.</param>
+        </member>
+        <member name="M:Assignment.Program.APSP_UsingImplictTaskCreation(System.Int32[0:,0:])">
+            <summary>
+            Method <c>APSP_UsingImplictTaskCreation</c> calculate the all pair shortest path using Task Parrallelism (implicit task creation).
+            </summary>
+            <param name="graph">It is a 2-D Array representing graph.</param>
+        </member>
+        <member name="M:Assignment.Program.APSP_UsingExplicitTaskCreation(System.Int32[0:,0:])">
+            <summary>
+            Method <c>APSP_UsingExplicitTaskCreation</c> calculate the all pair shortest path using Task Parrallelism (explicit task creation).
+            </summary>
+            <param name="graph"></param>
+        </member>
+        <member name="M:Assignment.Program.UpdateRow(System.Int32[0:,0:],System.Int32)">
+            <summary>
+            Method <c>UpdateRow</c> calcullate the value for the Floyd shortest distance matrix.
+            </summary>
+            <param name="shortest_path_graph">>It is a 2-D Array representing Floyd shortest distance graph.</param>
+            <param name="k">It is the outer loop of Floyd Algorithm that handle the update o each row value.</param>
+        </member>
+    </members>
+</doc>
